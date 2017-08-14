@@ -6,12 +6,63 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+5.0
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+ ####messages
+
+  | column | type | option |
+|:-----------|:----------- |:-----|
+| body n     |   text      |      |
+| image      |   string    |      |
+| group_id   |   integer   | n, f |
+| user_id    |   integer   | n, f |
+
+ ####users
+
+  | column | type | option |
+|:-----------|:----------- |:-----|
+| name       |   string   | n, i  |
+| age        |   integer  |       |
+| sex        |   string   |       |
+| email      |   string   | n     |
+| password   |   string   | n     |
+
+
+ ####groups
+
+  | column | type | option |
+|:-----------|:----------- |:-----|
+| name     |   string    | n  i |
+
+ ####member
+
+  | column | type | option |
+|:-----------|:----------- |:-----|
+| group_id   |   integer   | n, f |
+| user_id    |   integer   | n, f |
+
+ ####tags
+
+  | column | type | option |
+|:-----------|:----------- |:-----|
+| name       |   string    | n  i |
+
+ ####tag_manage
+
+  | column | type | option |
+|:-----------|:----------- |:-----|
+| tag_id     |   integer   | n, f |
+| user_id    |   integer   | n, f |
+
+ n = null: false
+ i = index
+ f = foreign_key: true
+
 
 * Database initialization
 
