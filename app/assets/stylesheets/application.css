@@ -13,7 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-#status_bar{
-  height: 20px;
-}
