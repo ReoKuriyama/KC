@@ -3,7 +3,9 @@
   <div class="header">
     <img src="assets/sample.jpg">
     <h1 class="talk-name">Family First</h1>
-    <i class="fa fa-cog" aria-hidden="true"></i>
+    <%= link_to destroy_user_session_path, method: :delete do %>
+      <i class="fa fa-cog" aria-hidden="true"></i>
+    <% end %>
     <i class="fa fa-users" aria-hidden="true"></i>
   </div>
 
