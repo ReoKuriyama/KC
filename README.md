@@ -28,7 +28,7 @@ Things you may want to cover:
 |:-----------|:----------- |:-----|
 | name       |   string   | n, i  |
 | age        |   integer  |       |
-| sex        |   string   |       |
+| gender     |   integer  |       |
 | email      |   string   | n     |
 | password   |   string   | n     |
 
