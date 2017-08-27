@@ -1,0 +1,47 @@
+#session_wrap{
+  width: 100%;
+  height: 100%;
+  font-size: 6vw;
+  background: #0B1237;
+  position: relative;
+}
+
+#session_new{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80vw;
+  height: 60vh;
+  background: #0B1237;
+  text-align: center;
+}
+
+#log_in{
+  font-size: 9vw;
+  margin-bottom: 30px;
+}
+
+label{
+  font-size: 6vw;
+}
+
+.field{
+  font-size: 4vw;
+}
+
+.field input{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+#remember_check{
+  width: 200px;
+}
+
+#remember_me{
+  font-size: 4vw;
+}
