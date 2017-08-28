@@ -1,0 +1,27 @@
+#home-header{
+  height: 200px;
+  width: 100%;
+  background-color: #241F2D;
+}
+
+#home-contents{
+  background-color: #0B1237;
+  width: 100%;
+  height: calc(100% - 200px);
+}
+
+.tab-list{
+  width: 100%;
+}
+
+.tab-list li{
+  width: 25%;
+  height: 200px;
+  float: left;
+  text-align: center;
+}
+
+.tab-list .fa{
+  font-size: 100px;
+  margin: 50px 0;
+}
