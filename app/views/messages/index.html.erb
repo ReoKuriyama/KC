@@ -1,12 +1,15 @@
-<div class="talk">
+<div id="talk" class="full">
 
-  <div class="header">
+  <div class="message-header">
+    <%= link_to root_path do %>
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+    <% end %>
     <img src="assets/sample.jpg">
     <h1 class="talk-name">Family First</h1>
     <%= link_to destroy_user_session_path, method: :delete do %>
-      <i class="fa fa-cog" aria-hidden="true"></i>
+      <i class="fa fa-cog fa-right" aria-hidden="true"></i>
     <% end %>
-    <i class="fa fa-users" aria-hidden="true"></i>
+    <i class="fa fa-users fa-right" aria-hidden="true"></i>
   </div>
 
   <div class="message-box">
