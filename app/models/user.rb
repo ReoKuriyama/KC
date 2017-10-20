@@ -7,4 +7,6 @@ class User < ApplicationRecord
   #Association
   has_many :members
   has_many :users, through: :members
+
+  mount_uploader :profile_image, ImageUploader
 end
