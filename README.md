@@ -27,6 +27,7 @@ Things you may want to cover:
   | column | type | option |
 |:-----------|:----------- |:-----|
 | name       |   string   | n, i  |
+| profile_image |   string   |       |
 | age        |   integer  |       |
 | gender     |   integer  |       |
 | email      |   string   | n     |
@@ -36,7 +37,7 @@ Things you may want to cover:
  ####groups
 
   | column | type | option |
-|:-----------|:----------- |:-----|
+|:---------|:----------- |:-----|
 | name     |   string    | n  i |
 
  ####member
