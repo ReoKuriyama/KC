@@ -1,4 +1,9 @@
 <div id ="session_wrap" class="full">
+  <div id="session-header">
+    <%= link_to root_path do %>
+      <i class="fa fa-angle-left" aria-hidden="true"></i>
+    <% end %>
+  </div>
   <div id="session_new">
     <h2 id="log_in">プロフィール編集</h2>
     <%= form_for @user do |f| %>
@@ -14,7 +19,7 @@
       </div>
 
       <div class="actions">
-        <%= f.submit "Save" %>
+        <%= f.submit "Save", class: "save" %>
       </div>
     <% end %>
 

@@ -1,7 +1,7 @@
 html, body{
   width: 100%;
   height: 100%;
-  color: #D0C6E0;
+  color: $main-text;
   background-color: black;
   position: fixed;
 }
@@ -13,8 +13,17 @@ html, body{
 
 a{
   text-decoration: none;
+  color: $main-text;
 }
 
 body{
   z-index: 2;
+}
+
+input{
+ color: $main-text;
+}
+
+.fa{
+  color: $main-text;
 }

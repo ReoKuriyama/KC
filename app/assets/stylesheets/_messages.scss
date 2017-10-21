@@ -4,48 +4,43 @@
 .message-header{
   width: 100%;
   background-color: #241F2D;
-  height: 160px;
+  height: 50px;
 }
 
 .message-header img{
-  margin: 20px;
-  height: 120px;
-  width: 120px;
+  margin: 5px;
+  height: 40px;
+  width: 40px;
   float: left;
 }
 
 .talk-name{
   font-size: 5vw;
   font-family: 'arial unicode ms';
-  line-height: 140px;
+  line-height: 50px;
   float: left;
-}
-
-.message-header .fa{
-  font-size: 60px;
-  color: #D0C6E0;
 }
 
 .fa-angle-left{
   float: left;
-  margin : 40px 0 40px 40px;
+  margin : 15px 0 15px 10px;
 }
 
 .fa-angle-left:before{
-  font-size: 80px;
+  font-size: 20px;
 }
 
 .fa-right{
-  margin: 50px 40px 50px 0;
+  margin: 15px 15px 15px 0;
   float: right;
 }
 
 .message-box{
-  width: calc(100% - 68px); //padding + border
+  width: calc(100vw - 44px); //padding + border
   background-color: #0B1237;
-  height: calc(100% - 168px); //header + border
-  padding: 0 30px;
-  border: solid 4px #808000;
+  height: calc(100% - 54px); //header + border
+  padding: 0 20px;
+  border: solid 2px #808000;
 }
 
 .message-box{
@@ -53,7 +48,7 @@
 }
 
 .message-box ul:first-child{
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .message-box::-webkit-scrollbar{
