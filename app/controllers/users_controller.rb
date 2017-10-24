@@ -11,6 +11,19 @@ class UsersController < ApplicationController
     end
   end
 
+  def search
+    @keyword = params[:keyword]
+    if @keyword.blank?
+      @users  = []
+    else
+      @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(name: current_user.name )
+
+    end
+    respond_to do |format|
+      format.json
+    end
+  end
+
   private
   def set_user
     @user = current_user

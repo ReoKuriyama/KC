@@ -4,6 +4,7 @@ html, body{
   color: $main-text;
   background-color: black;
   position: fixed;
+  z-index: 2;
 }
 
 #status-bar{
@@ -17,7 +18,6 @@ a{
 }
 
 body{
-  z-index: 2;
 }
 
 input{
@@ -26,4 +26,8 @@ input{
 
 .fa{
   color: $main-text;
+}
+
+input[type="text"]:focus {
+  outline: 0; //入力時の枠
 }
