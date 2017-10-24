@@ -59,20 +59,4 @@ $(function() {
   $('body').on('click', '#mordal-overlay', function(){
     $("#friends-request-mordal, #mordal-overlay").remove();
   });
-  // // 検索結果に出てきたユーザーにイベントを設定
-  // $('#user-search-result').on('click', '.user-search-add', function(){
-  //   var id = $(this).data('userId');
-  //   var name = $(this).data('userName');
-  //   var html = addUser(id, name);
-
-  //   $('#chat-group-users').append(html);
-
-  //   $(this).parent('.chat-group-user').remove();
-  // });
-
-  // // 削除ボタンのイベント
-  // $('#chat-group-users').on('click', '.user-search-remove', function(){
-  //   var id = $(this).data('userId');
-  //   $('#chat-group-user-' + id).remove();
-  // })
 });
