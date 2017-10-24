@@ -35,10 +35,7 @@ $(function() {
       var html = "";
       users.forEach(function(user){
         html += appendUser(user);
-        console.log(1)
       });
-
-      console.log(html)
       $('#user-search-result').html(html)
     })
     .fail(function() {
