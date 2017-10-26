@@ -103,11 +103,12 @@
 
 .message-input{
   background-color: #201b25;
-  font-size: 2.5vh;
+  font-size: 15px;
   line-height: 45px;
   border: none;
   width: calc(70vw - 4px);
   height: 8vh;
+  min-height: 30px;
   text-align: center;
   float: left;
 }
@@ -115,11 +116,13 @@
 #message-send{
   width: 15vw;
   height: 8vh;
+  min-height: 30px;
   float: left;
 }
 
 .message-form button{
   height: 8vh;
+  min-height: 30px;
   width: 8vh;
 }
 
