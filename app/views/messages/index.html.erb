@@ -17,13 +17,13 @@
           <% if message.user_id == current_user.id %>
             <li class="myself">
               <span class="message-time"><%= message.created_at.strftime('%H:%M') %></span>
-              <p class="message-text"><%= message.body %></p>
+              <%= simple_format(message.body, class: 'message-text') %>
             </li>
           <% else %>
             <li class="you">
               <!-- <h4 class="other-name"><%= message.user.name %></h4> -->
               <span class="message-time"><%= message.created_at.strftime('%H:%M') %></span>
-              <p class="message-text"><%= message.body %></p>
+              <%= simple_format(message.body, class: 'message-text') %>
             </li>
           <% end %>
         <% end %>

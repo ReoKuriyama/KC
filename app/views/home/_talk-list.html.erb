@@ -5,25 +5,29 @@
   <div id="home__talk-list" class="full">
     <ul id="talk-list">
       <% @groups.each do |group| %>
-      <li class="talk">
-        <%= link_to group_messages_path(group) do %>
-        <div class="talk-box">
-          <img src="">
-          <h2 class="talk-box__name">
-            <% if group.users.count >= 3 %>
-              <%= group.name %>>
-            <% else %>
-              <% group.users.each do |user| %>
-                <% if user != current_user %>
-                  <%= user.name %>
+        <li class="talk">
+          <%= link_to group_messages_path(group) do %>
+            <div class="talk-box">
+              <% if group.users.count >= 3 %>
+                <img src="<%= group.image%>">
+                <h2 class="talk-box__name">
+                  <%= group.name %>>
+                </h2>
+              <% else %>
+                <% group.users.each do |user| %>
+                  <% if user != current_user %>
+                    <img src="<%= user.profile_image %>">
+                    <h2 class="talk-box__name">
+                      <%= user.name %>
+                    </h2>
+                  <% end %>
                 <% end %>
               <% end %>
-            <% end %>
-            </h2>
-          <p class="last-message">今日は昨日は楽しかったですね</p>
-        </div>
-        <% end %>
-      </li>
+              </h2>
+              <p class="last-message"><%= group.last_message%></p>
+            </div>
+          <% end %>
+        </li>
       <% end %>
     </ul>
   </div>

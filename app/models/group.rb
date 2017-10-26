@@ -13,4 +13,16 @@ class Group < ApplicationRecord
       end
     end
   end
+
+  def last_message
+    if messages.last
+      if messages.last.image?
+        "Image was uploaded"
+      else
+        messages.last.body
+      end
+    else
+      "トークを始めよう"
+    end
+  end
 end
