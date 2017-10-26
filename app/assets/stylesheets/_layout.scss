@@ -3,8 +3,6 @@ html, body{
   height: 100%;
   color: $main-text;
   background-color: black;
-  position: fixed;
-  z-index: 2;
 }
 
 #status-bar{
@@ -30,4 +28,22 @@ input{
 
 input[type="text"]:focus {
   outline: 0; //入力時の枠
+}
+
+
+textarea{
+  color: $main-text;
+}
+
+textarea:focus{
+  outline: 0;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
 }
