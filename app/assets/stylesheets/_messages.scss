@@ -92,13 +92,14 @@
   background-color: #241F2D;
   width: calc(100vw - 4px);
   height: 8vh;
-  min-height: 30px;
+  min-height: 50px;
 }
 
 
 #image-send{
   width: 15vw;
   height: 8vh;
+  min-height: 50px;
   float: left;
 }
 
@@ -109,7 +110,7 @@
   border: none;
   width: calc(70vw - 4px);
   height: 8vh;
-  min-height: 30px;
+  min-height: 40px;
   text-align: center;
   float: left;
 }
@@ -117,13 +118,12 @@
 #message-send{
   width: 15vw;
   height: 8vh;
-  min-height: 30px;
+  min-height: 50px;
   float: left;
 }
 
 .message-form button{
   height: 8vh;
-  min-height: 30px;
   width: 8vh;
 }
 
