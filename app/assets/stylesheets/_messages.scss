@@ -112,6 +112,11 @@
   float: left;
 }
 
+.message-input::selection {
+  color: $main-text;
+  background: black;
+}
+
 #message-send{
   width: 15vw;
   height: 50px;
