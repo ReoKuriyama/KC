@@ -1,107 +1,107 @@
-.talk{
+.talk {
 }
 
-.message-header{
+.message-header {
   width: 100vw;
   background-color: #241F2D;
   height: 50px;
 }
 
-.message-header img{
+.message-header img  {
   margin: 5px;
   height: 40px;
   width: 40px;
   float: left;
 }
 
-.talk-name{
+.talk-name {
   font-size: 20px;
   font-family: 'arial unicode ms';
   line-height: 50px;
   float: left;
 }
 
-.fa-angle-left{
+.fa-angle-left {
   float: left;
   margin : 15px 0 15px 10px;
 }
 
-.fa-angle-left:before{
+.fa-angle-left:before {
   font-size: 20px;
 }
 
-.fa-right{
+.fa-right {
   margin: 15px 15px 15px 0;
   float: right;
 }
 
-.fa-right:before{
+.fa-right:before  {
   font-size: 20px;
 }
 
-.message-content{
+.message-content {
   background-color: #0B1237;
   height: calc(100vh - 54px); //header + border
   border: solid 2px #808000;
   z-index: 2;
 }
 
-.message-box{
+.message-box {
   width: calc(100vw - 44px); //padding + border
   height: calc(100vh - 104px);
   padding: 0 20px;
   overflow: scroll;
 }
 
-.message-content ul:first-child{
+.message-content ul:first-child {
   margin-top: 10px;
 }
 
-.message-content ul:last-child{
+.message-content ul:last-child {
   margin-bottom: 10px;
 }
 
-.message-content::-webkit-scrollbar{
+.message-content::-webkit-scrollbar {
   display: none;
 }
 
-.myself{
+.myself {
   text-align: right;
 }
 
 .you{
 }
 
-.other-name{
+.other-name {
   display: inline;
   font-size: 12px;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
   margin-right: 10px;
 }
 
-.message-time{
+.message-time {
   color: #594F69;
   font-size: 10px;
 }
 
-.message-text{
+.message-text {
   font-size: 12px;
 }
 
-.message-form{
+.message-form {
   background-color: #241F2D;
   width: calc(100vw - 4px);
   height: 50px;
 }
 
 
-#image-send{
+#image-send {
   width: 15vw;
   height: 50px;
   float: left;
 }
 
-.message-input{
+.message-input {
   background-color: #201b25;
   font-size: 15px;
   line-height: 45px;
@@ -117,24 +117,29 @@
   background-color: white;
 }
 
-#message-send{
+.message-input::-moz-selection {
+  color: $main-text;
+  background-color: white;
+}
+
+#message-send {
   width: 15vw;
   height: 50px;
   min-height: 50px;
   float: left;
 }
 
-.message-form button{
+.message-form button {
   width: 8vh;
   height: 50px;
   min-width: 50px;
 }
 
-.image-btn{
+.image-btn {
   float: right;
 }
 
-.message-form .fa:before{
+.message-form .fa:before {
   font-size: 20px;
   text-align: center;
 }
