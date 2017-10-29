@@ -17,7 +17,7 @@ Things you may want to cover:
 
   | column | type | option |
 |:-----------|:----------- |:-----|
-| body n     |   text      |      |
+| body       |   text      |      |
 | image      |   string    |      |
 | group_id   |   integer   | n, f |
 | user_id    |   integer   | n, f |

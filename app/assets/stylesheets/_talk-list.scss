@@ -5,7 +5,7 @@
 
 #home__talk-list{
   background-color: #0B1237;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
   overflow: scroll;
 }
 
@@ -14,12 +14,12 @@
 }
 
 .talk:first-child{
-  border: 2px solid #808000;
+  border: 2px solid black;
 }
 
 .talk{
   height: 80px;
-  border: solid #808000;
+  border: solid black;
   border-width: 0 2px 2px 2px;
 }
 
@@ -37,7 +37,7 @@
 
 .talk-box__name{
   color: #D0C6E0;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 50px;
 }
 

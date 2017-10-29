@@ -11,12 +11,35 @@ class UsersController < ApplicationController
     end
   end
 
+  def search
+    @keyword = params[:keyword]
+    if @keyword.blank?
+      @users  = []
+    else
+      @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(id: current_user.friends.pluck(:id) ).where.not(id: current_user.id)
+    end
+    respond_to do |format|
+      format.json
+    end
+  end
+
+  def friend
+    @friend = Friend.new(to_user_id: params[:to_user_id], from_user_id: current_user.id)
+    respond_to do |format|
+      if @friend.save
+        format.json
+      else
+        format.json
+      end
+    end
+  end
+
   private
   def set_user
     @user = current_user
   end
 
   def user_params
-    params.require(:user).permit(:age, :profile_image)
+    params.require(:user).permit(:age, :image)
   end
 end

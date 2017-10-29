@@ -21,3 +21,7 @@
   width: 100%;
   height: calc(100vh - 50px);
 }
+
+#user-content, #search-content, #setting-content{
+  display: none;
+}

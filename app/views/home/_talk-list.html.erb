@@ -1,44 +1,34 @@
 <div id="talk-content" class="tab-content">
-  <div id="talk-list__header">
-    <h2 style="font-size: 10px">グループ検索機能</h2><!--仮置き -->
-  </div>
+  <!--<div id="talk-list__header">
+    <h2 style="font-size: 10px">グループ検索機能</h2>
+  </div>-->
   <div id="home__talk-list" class="full">
     <ul id="talk-list">
-      <li class="talk">
-        <%= link_to messages_path do %>
-        <div class="talk-box">
-          <img src="assets/sample.jpg">
-          <h2 class="talk-box__name">You</h2>
-          <p class="last-message">今日は昨日は楽しかったですね</p>
-        </div>
-        <% end %>
-      </li>
-      <li class="talk">
-      <%= link_to messages_path do %>
-        <div class="talk-box">
-          <img src="assets/sample.jpg">
-          <h2 class="talk-box__name">You</h2>
-          <p class="last-message">今日は昨日は楽しかったですね</p>
-        </div>
-        <% end %>
-      </li>
-      <li class="talk">
-      </li>
-      <li class="talk">
-      </li>
-      <li class="talk">
-      </li>
-      <li class="talk">
-      <%= link_to messages_path do %>
-        <div class="talk-box">
-          <img src="assets/sample.jpg">
-          <h2 class="talk-box__name">You</h2>
-          <p class="last-message">今日は昨日は楽しかったですね</p>
-        </div>
-        <% end %>
-      </li>
-      <li class="talk">
-      </li>
+      <% @groups.each do |group| %>
+        <li class="talk">
+          <%= link_to group_messages_path(group) do %>
+            <div class="talk-box">
+              <% if group.users.count >= 3 %>
+                <img src="<%= group.image%>">
+                <h2 class="talk-box__name">
+                  <%= group.name %>>
+                </h2>
+              <% else %>
+                <% group.users.each do |user| %>
+                  <% if user != current_user %>
+                    <img src="<%= user.image %>">
+                    <h2 class="talk-box__name">
+                      <%= user.name %>
+                    </h2>
+                  <% end %>
+                <% end %>
+              <% end %>
+              </h2>
+              <p class="last-message"><%= group.last_message%></p>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </div>
