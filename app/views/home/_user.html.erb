@@ -1,10 +1,10 @@
 <div id="user-content" class="tab-content">
   <div id="user-list__header">
-    <h2> ユーザー一覧(WIP)</h2>
+    <h2>友達一覧</h2>
   </div>
   <div id="home__user-list" class="full">
     <ul id="user-list">
-    <% @users.each do |user| %>
+    <% @friends.each do |user| %>
       <li class="user-box">
           <img src="<%= user.profile_image %>">
           <h2 class="user-box__name"><%= user.name %></h2>

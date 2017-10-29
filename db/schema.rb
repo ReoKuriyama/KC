@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171025113930) do
+ActiveRecord::Schema.define(version: 20171029044322) do
+
+  create_table "friends", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "to_user_id",   null: false
+    t.integer  "from_user_id", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["from_user_id"], name: "index_friends_on_from_user_id", using: :btree
+    t.index ["to_user_id", "from_user_id"], name: "index_friends_on_to_user_id_and_from_user_id", unique: true, using: :btree
+    t.index ["to_user_id"], name: "index_friends_on_to_user_id", using: :btree
+  end
 
   create_table "groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
