@@ -16,11 +16,22 @@ class UsersController < ApplicationController
     if @keyword.blank?
       @users  = []
     else
-      @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(name: current_user.name )
-
+      binding.pry
+      @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(name: current_user.friends.pluck(:name) )
     end
     respond_to do |format|
       format.json
+    end
+  end
+
+  def friend
+    @friend = Friend.new(to_user_id: params[:to_user_id], from_user_id: current_user.id)
+    respond_to do |format|
+      if @friend.save
+        format.json
+      else
+        format.json
+      end
     end
   end
 

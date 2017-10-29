@@ -20,14 +20,37 @@
   opacity: 0.9;
 }
 
+.mordal-image-box{
+  width: 80vw;
+  height: 60vw;
+}
+
 #friends-request-mordal img{
   width: 80vw;
+  height: 60vw;
+}
+
+.mordal-box{
+  height: calc(60vh - 60vw);
+  width: 80vw;
+  background-color: black;
+}
+
+.mordal-box .fa{
+  margin-right: 30px;
+  margin-top: 20px;
+  float: right;
+}
+
+.mordal-box .fa:before{
+  font-size: 15vw;
+  color: $main-text;
 }
 
 #friends-request-mordal p{
   text-align: center;
   font-size: 6vw;
-  color: black;
+  color: $main-text;
 }
 
 #mordal-overlay{

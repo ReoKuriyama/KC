@@ -11,15 +11,22 @@ $(function() {
 
   function addMordal(id, name, image){
   var html =
-  '<div id="friends-request-mordal">' +
-  '<img src ="' + image + '">' +
-  '<p>' + name + '</p>' +
+  '<div id="friends-request-mordal" data-user-id="' + id + '">' +
+    '<div class="mordal-image-box">' +
+      '<img src ="' + image + '">' +
+    '</div>' +
+    '<div class="mordal-box">' +
+      '<p>' + name + '</p>' +
+      '<p> 友達に追加する </p>' +
+      '<i class="fa fa-plus" aria-hidden="true"></i>' +
+    '</div>' +
   '</div>' +
   '<div id="mordal-overlay">' +
   '</div>'
   return html;
   }
 
+  // ユーザー検索機能
   $("#user-search-field").on("keyup", function() {
     var input = $("#user-search-field").val();
     $.ajax({
@@ -43,7 +50,8 @@ $(function() {
     })
   });
 
-    $("#user-search-result").on('click', '.user-box', function(){
+  // モーダル
+  $("#user-search-result").on('click', '.user-box', function(){
     $(this).blur();
     if($("#mordal-overlay")[0]) return false; //モーダルがすでにある時はここで終了
     var id = $(this).data('userId');
@@ -56,4 +64,23 @@ $(function() {
   $('body').on('click', '#mordal-overlay', function(){
     $("#friends-request-mordal, #mordal-overlay").remove();
   });
+
+  //友達追加機能
+  $("body").on('click', '.fa-plus', function(){
+    var id = $('#friends-request-mordal').data('userId')
+     $.ajax({
+      type: 'GET',
+      url: '/friend',
+      data: {
+        to_user_id: id
+      },
+      dataType: 'json'
+    })
+     .done(function(users) {
+    })
+    .fail(function() {
+
+    })
+  });
+
 });
