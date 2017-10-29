@@ -16,7 +16,6 @@ class UsersController < ApplicationController
     if @keyword.blank?
       @users  = []
     else
-      binding.pry
       @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(name: current_user.friends.pluck(:name) )
     end
     respond_to do |format|
