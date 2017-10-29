@@ -11,7 +11,7 @@ $(function() {
 
   function addMordal(id, name, image){
   var html =
-  '<div id="friends-request-mordal" data-user-id="' + id + '">' +
+  '<div id="friends-request-mordal" data-user-id="' + id + '" data-user-name="' + name + '">' +
     '<div class="mordal-image-box">' +
       '<img src ="' + image + '">' +
     '</div>' +
@@ -68,6 +68,7 @@ $(function() {
   //友達追加機能
   $("body").on('click', '.fa-plus', function(){
     var id = $('#friends-request-mordal').data('userId')
+    var name = $('#friends-request-mordal').data('userName')
      $.ajax({
       type: 'GET',
       url: '/friend',
@@ -77,6 +78,12 @@ $(function() {
       dataType: 'json'
     })
      .done(function(users) {
+      $("#user-search-result").empty();
+      $(".mordal-box").empty();
+
+      var html = '<h3 class="friends-add">' + name + 'さんと<br>友達になりました！</h3>'
+
+      $('.mordal-box').append(html);
     })
     .fail(function() {
 

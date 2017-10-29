@@ -1,4 +1,4 @@
-#new-talk-mordal{
+#new-talk-mordal {
   width: 80vw;
   height: 60vh;
   background-color: white;
@@ -9,10 +9,10 @@
   opacity: 0.8
 }
 
-#friends-request-mordal{
+#friends-request-mordal {
   width: 80vw;
   height: 60vh;
-  background-color: white;
+  background-color: black;
   top: 25vh;
   left: 10vw;
   z-index: 1;
@@ -20,23 +20,22 @@
   opacity: 0.9;
 }
 
-.mordal-image-box{
+.mordal-image-box {
   width: 80vw;
   height: 60vw;
 }
 
-#friends-request-mordal img{
+#friends-request-mordal img {
   width: 80vw;
   height: 60vw;
 }
 
-.mordal-box{
+.mordal-box {
   height: calc(60vh - 60vw);
   width: 80vw;
-  background-color: black;
 }
 
-.mordal-box .fa{
+.mordal-box .fa {
   margin-right: 30px;
   margin-top: 20px;
   float: right;
@@ -47,16 +46,22 @@
   color: $main-text;
 }
 
-#friends-request-mordal p{
+#friends-request-mordal p {
   text-align: center;
   font-size: 6vw;
   color: $main-text;
 }
 
-#mordal-overlay{
+.friends-add {
+  text-align: center;
+  padding: 40px;
+}
+
+#mordal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 120%;
 }
+
