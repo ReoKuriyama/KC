@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     if @keyword.blank?
       @users  = []
     else
-      @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(name: current_user.friends.pluck(:name) )
+      @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(name: current_user.friends.pluck(:name) ).where.not(name: current_user.name)
     end
     respond_to do |format|
       format.json
