@@ -1,0 +1,81 @@
+.talk{
+}
+
+.message-header{
+  width: 100%;
+  background-color: #241F2D;
+  height: 160px;
+}
+
+.message-header img{
+  margin: 20px;
+  height: 120px;
+  width: 120px;
+  float: left;
+}
+
+.talk-name{
+  font-size: 5vw;
+  font-family: 'arial unicode ms';
+  line-height: 140px;
+  float: left;
+}
+
+.message-header .fa{
+  font-size: 60px;
+  color: #D0C6E0;
+}
+
+.fa-angle-left{
+  float: left;
+  margin : 40px 0 40px 40px;
+}
+
+.fa-angle-left:before{
+  font-size: 80px;
+}
+
+.fa-right{
+  margin: 50px 40px 50px 0;
+  float: right;
+}
+
+.message-box{
+  width: calc(100% - 68px); //padding + border
+  background-color: #0B1237;
+  height: calc(100% - 168px); //header + border
+  padding: 0 30px;
+  border: solid 4px #808000;
+}
+
+.message-box{
+  overflow: scroll;
+}
+
+.message-box ul:first-child{
+  margin-top: 30px;
+}
+
+.message-box::-webkit-scrollbar{
+  display: none;
+}
+
+.myself{
+  text-align: right;
+}
+
+.other-name{
+  display: inline;
+  font-size: 4vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  margin-right: 10px;
+}
+
+.message-time{
+  color: #594F69;
+  font-size: 2.5vw;
+}
+
+.message-text{
+  font-size: 3.5vw;
+}
