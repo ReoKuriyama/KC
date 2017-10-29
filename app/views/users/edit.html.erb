@@ -9,8 +9,8 @@
     <%= form_for @user do |f| %>
       <div class="field">
         <%= f.label :プロフィール写真 %><br />
-        <img  class="profile-image" src="<%= @user.profile_image %>">
-        <%= f.file_field :profile_image, autofocus: true %>
+        <img  class="profile-image" src="<%= @user.image %>">
+        <%= f.file_field :image, autofocus: true %>
       </div>
 
       <div class="field" id="age">

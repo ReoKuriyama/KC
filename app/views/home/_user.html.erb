@@ -6,7 +6,7 @@
     <ul id="user-list">
     <% @friends.each do |user| %>
       <li class="user-box">
-          <img src="<%= user.profile_image %>">
+          <img src="<%= user.image %>">
           <h2 class="user-box__name"><%= user.name %></h2>
       </li>
       <% end %>

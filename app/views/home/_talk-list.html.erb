@@ -16,7 +16,7 @@
               <% else %>
                 <% group.users.each do |user| %>
                   <% if user != current_user %>
-                    <img src="<%= user.profile_image %>">
+                    <img src="<%= user.image %>">
                     <h2 class="talk-box__name">
                       <%= user.name %>
                     </h2>

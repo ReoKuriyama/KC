@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     if @keyword.blank?
       @users  = []
     else
-      @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(name: current_user.friends.pluck(:name) ).where.not(name: current_user.name)
+      @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(id: current_user.friends.pluck(:id) ).where.not(id: current_user.id)
     end
     respond_to do |format|
       format.json
@@ -40,6 +40,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:age, :profile_image)
+    params.require(:user).permit(:age, :image)
   end
 end
