@@ -43,3 +43,5 @@ class UsersController < ApplicationController
     params.require(:user).permit(:age, :image)
   end
 end
+
+# test
