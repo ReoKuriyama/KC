@@ -8,12 +8,6 @@
         <li class="talk">
           <%= link_to group_messages_path(group) do %>
             <div class="talk-box">
-              <% if group.users.count >= 3 %>
-                <img src="<%= group.image%>">
-                <h2 class="talk-box__name">
-                  <%= group.name %>>
-                </h2>
-              <% else %>
                 <% group.users.each do |user| %>
                   <% if user != current_user %>
                     <img src="<%= user.image %>">
@@ -22,8 +16,6 @@
                     </h2>
                   <% end %>
                 <% end %>
-              <% end %>
-              </h2>
               <p class="last-message"><%= group.last_message%></p>
             </div>
           <% end %>

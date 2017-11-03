@@ -4,7 +4,9 @@
     <%= link_to root_path do %>
       <i class="fa fa-angle-left" aria-hidden="true"></i>
     <% end %>
-    <img src="<%= @talk.image %>">
+    <% if @talk.image != nil %>
+      <img src="<%= @talk.image %>">
+    <% end %>
     <h1 class="talk-name"><%= @talk.name %></h1>
       <i class="fa fa-cog fa-right" aria-hidden="true"></i>
     <i class="fa fa-users fa-right" aria-hidden="true"></i>
