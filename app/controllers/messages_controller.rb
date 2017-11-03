@@ -1,9 +1,11 @@
 class MessagesController < ApplicationController
   before_action :set_group
   def index
-    if @group.users.count == 2
+    if @group.group_type == 'dm'
       user = @group.users.where.not(name: current_user.name )
       @talk = user[0]
+    elsif
+      @talk = @group
     end
     @messages = @group.messages
     @message = Message.new
