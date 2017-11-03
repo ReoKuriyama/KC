@@ -1,15 +1,4 @@
-#new-talk-mordal {
-  width: 80vw;
-  height: 60vh;
-  background-color: black;
-  top: 25vh;
-  left: 10vw;
-  z-index: 1;
-  position: fixed;
-  opacity: 0.9
-}
-
-#friends-request-mordal {
+#mordal {
   width: 80vw;
   height: 60vh;
   background-color: black;
@@ -25,7 +14,7 @@
   height: 60vw;
 }
 
-#friends-request-mordal img {
+#mordal img {
   width: 80vw;
   height: 60vw;
 }
@@ -41,12 +30,12 @@
   float: right;
 }
 
-.mordal-box .fa:before{
+.mordal-box .fa:before {
   font-size: 15vw;
   color: $main-text;
 }
 
-#friends-request-mordal p {
+#mordal p {
   text-align: center;
   font-size: 6vw;
   color: $main-text;
@@ -55,6 +44,10 @@
 .friends-add {
   text-align: center;
   padding: 40px;
+}
+
+#new-talk-submit {
+  display: none
 }
 
 #mordal-overlay {

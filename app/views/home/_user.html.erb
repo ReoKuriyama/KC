@@ -5,7 +5,7 @@
   <div id="home__user-list" class="full">
     <ul id="user-list">
     <% @friends.each do |user| %>
-      <li class="user-box">
+      <li class="user-box" data-user-id="<%= user.id %>">
           <img src="<%= user.image %>">
           <h2 class="user-box__name"><%= user.name %></h2>
       </li>

@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
    get 'search' => 'users#search'
    get 'friend' => 'users#friend'
+   get 'dm'     => 'groups#dm'
 end
