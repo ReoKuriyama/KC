@@ -45,4 +45,9 @@
   font-size: 15px;
   color: #D0C6E0;
   line-height: 5vh;
+  // widthオーバー分を隠す
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
 }

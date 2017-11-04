@@ -8,7 +8,7 @@
   min-height: 50px;
 }
 
-.message-header img  {
+.message-header img {
   margin: 1vh;
   height: 7vh;
   width: 7vh;
@@ -24,7 +24,7 @@
 
 .fa-angle-left {
   float: left;
-  margin : 1vh 0 1vh 2vh;
+  margin : 1vh 2vh 1vh 3vh;
 }
 
 .fa-angle-left:before {
@@ -85,7 +85,8 @@
 }
 
 .message-text {
-  font-size: 18px;
+  font-size: 17px;
+  word-wrap: break-word; //改行対策
   max-width: 100%;
 }
 
