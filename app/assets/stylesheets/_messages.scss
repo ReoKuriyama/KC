@@ -4,51 +4,51 @@
 .message-header {
   width: 100vw;
   background-color: #241F2D;
-  height: 50px;
+  height: 9vh;
+  min-height: 50px;
 }
 
 .message-header img  {
-  margin: 5px;
-  height: 40px;
-  width: 40px;
+  margin: 1vh;
+  height: 7vh;
+  width: 7vh;
   float: left;
 }
 
 .talk-name {
-  font-size: 20px;
+  font-size: 3vh;
   font-family: 'arial unicode ms';
-  line-height: 50px;
+  line-height: 9vh;
   float: left;
 }
 
 .fa-angle-left {
   float: left;
-  margin : 15px 0 15px 10px;
+  margin : 1vh 0 1vh 2vh;
 }
 
 .fa-angle-left:before {
-  font-size: 20px;
+  font-size: 7vh;
 }
 
 .fa-right {
-  margin: 15px 15px 15px 0;
+  margin: 2vh 2vh 2vh 0;
   float: right;
 }
 
 .fa-right:before  {
-  font-size: 20px;
+  font-size: 5vh;
 }
 
 .message-content {
   background-color: #0B1237;
-  height: calc(100vh - 54px); //header + border
+  height: calc(91vh - 4px); //header + form
   border: solid 2px #808000;
-  z-index: 2;
 }
 
 .message-box {
   width: calc(100vw - 44px); //padding + border
-  height: calc(100vh - 104px);
+  height: calc(91vh - 54px);
   padding: 0 20px;
   overflow: scroll;
 }
@@ -85,7 +85,8 @@
 }
 
 .message-text {
-  font-size: 12px;
+  font-size: 18px;
+  max-width: 100%;
 }
 
 .message-form {

@@ -1,25 +1,29 @@
 #home-header{
-  height: 50px;
+  height: 18vw;
   width: 100%;
   background-color: #241F2D;
 }
 
 .tab-list li{
   width: 25vw;
-  height: 50px;
+  height: 18vw;
   float: left;
   text-align: center;
 }
 
+.active{
+  background-color: #0b1237;
+}
+
 .tab-list .fa{
-  font-size: 40px;
-  margin: 5px 0;
+  font-size: 14vw;
+  margin: 2vw 0;
 }
 
 #home-contents{
   background-color: #0B1237;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 18vw);
 }
 
 #user-content, #search-content, #setting-content{

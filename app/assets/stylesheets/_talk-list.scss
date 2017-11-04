@@ -5,7 +5,7 @@
 
 #home__talk-list{
   background-color: #0B1237;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 18vw);
   overflow: scroll;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .talk{
-  height: 80px;
+  height: 14vh;
   border: solid black;
   border-width: 0 2px 2px 2px;
 }
@@ -29,20 +29,20 @@
 }
 
 .talk-box img{
-  height: 60px;
-  width: 60px;
-  margin: 10px;
+  height: 12vh;
+  width: 12vh;
+  margin: 1vh 3vh 1vh 1vh;
   float: left;
 }
 
 .talk-box__name{
   color: #D0C6E0;
-  font-size: 18px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 8vh;
 }
 
 .last-message{
-  font-size: 10px;
+  font-size: 15px;
   color: #D0C6E0;
-  line-height: 10px;
+  line-height: 5vh;
 }

@@ -1,11 +1,11 @@
 #user-list__header{
-  height: 50px;
+  height: 15vw;
   background-color: black;
 }
 
 #home__user-list{
   background-color: #0B1237;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 33vw);
   overflow: scroll;
 }
 
@@ -14,19 +14,19 @@
 }
 
 .user-box{
-  height: 60px;
+  height: 10vh;
 }
 
 .user-box img{
-  height: 50px;
-  width: 50px;
-  margin: 5px;
+  height: 8vh;
+  width: 8vh;
+  margin: 1vh;
   float: left;
 }
 
 .user-box__name{
-  font-size: 18px;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 10vh;
   margin-left: 10px;
   float: left;
 }
