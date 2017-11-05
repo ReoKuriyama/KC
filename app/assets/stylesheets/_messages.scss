@@ -42,12 +42,13 @@
 
 .message-content {
   background-color: #0B1237;
-  height: calc(91vh - 4px); //header + form
-  border: solid 2px #808000;
+  height: calc(91vh - 4px); //header + border
+  border: solid #808000;
+  border-width: 2px 0;
 }
 
 .message-box {
-  width: calc(100vw - 44px); //padding + border
+  width: calc(100vw - 40px); //padding
   height: calc(91vh - 54px);
   padding: 0 20px;
   overflow: scroll;
@@ -92,7 +93,7 @@
 
 .message-form {
   background-color: #241F2D;
-  width: calc(100vw - 4px);
+  width: 100vw;
   height: 50px;
 }
 
@@ -108,7 +109,7 @@
   font-size: 15px;
   line-height: 45px;
   border: none;
-  width: calc(70vw - 4px);
+  width: 70vw;
   height: 50px;
   text-align: center;
   float: left;
