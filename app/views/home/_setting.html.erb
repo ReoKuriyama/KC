@@ -1,5 +1,17 @@
 <div id="setting-content" class="tab-content">
-<p style="font-size: 30px">setting<p>
-<%= link_to 'ユーザー情報編集', edit_user_path(current_user) %>
-<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+  <div id="profile-edit">
+    <h2 id="profile-edit-title">プロフィール</h2>
+    <%= form_for @user do |f| %>
+      <%= f.label :image  do %>
+        <%= f.file_field :image, class: "none", autofocus: true %>
+          <img class="profile-image" src="<%= @user.image %>">
+      <% end %>
+
+      <div class="actions">
+        <%= f.submit "Save", class: "save" %>
+      </div>
+    <% end %>
+
+  </div>
+  <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
 </div>

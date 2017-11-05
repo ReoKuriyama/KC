@@ -1,12 +1,13 @@
 @import "./variable";
 @import "./layout";
 @import "./reset";
-@import "./home";
+@import "home/home";
+@import "home/user-list";
+@import "home/search";
+@import "home/talk-list";
+@import "home/setting";
 @import "./messages";
-@import "./profile-edit";
 @import "./mordal";
 @import "./session_new";
-@import "./talk-list";
 @import "./session_new";
-@import "./user-list";
-@import "./search";
+

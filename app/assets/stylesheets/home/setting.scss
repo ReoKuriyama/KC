@@ -1,0 +1,32 @@
+#setting-content{
+  height: calc(100vh - 18vw);
+}
+
+#profile-edit{
+  height: 50vh;
+  width: calc(100vw - 40px);
+  padding: 20px;
+}
+
+#profile-edit-title{
+  font-size: calc(15px + 1vh);
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+#profile-edit img{
+  width: 50vw;
+  height: 50vw;
+  display: block;
+  margin: 0 auto;
+}
+
+#age input{
+  width: 30px;
+  text-align: center
+}
+
+.save{
+  background-color: black;
+  float: right;
+}
